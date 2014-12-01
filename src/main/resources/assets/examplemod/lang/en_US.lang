@@ -1,0 +1,10 @@
+#CreativeTab
+itemGroup.examplemod=Example Mod
+
+#Items
+item.examplemod:sapphire.name=Sapphire
+item.examplemod:sapphire_pickaxe.name=Sapphire Pickaxe
+
+#Blocks
+tile.examplemod:charcoal_block.name=Block of Charcoal
+tile.examplemod:sapphire_ore.name=Sapphire Ore

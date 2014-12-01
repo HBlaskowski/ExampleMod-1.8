@@ -1,0 +1,16 @@
+[
+{
+  "modid": "ExampleMod",
+  "name": "Example Mod",
+  "description": "Example of a simple mod for MC 1.8",
+  "version": "1.8-1.0.0",
+  "mcversion": "1.8",
+  "url": "",
+  "updateUrl": "",
+  "authorList": ["JDLogic"],
+  "credits": "",
+  "logoFile": "/ExampleModLogo.png",
+  "screenshots": [],
+  "dependencies": []
+}
+]
