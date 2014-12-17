@@ -1,27 +1,22 @@
-package com.jdlogic.examplemod.item.tools;
+package com.jdlogic.examplemod.item;
 
 import com.google.common.collect.Sets;
-import com.jdlogic.examplemod.creativetab.CreativeTabEM;
-import com.jdlogic.examplemod.item.ItemToolEM;
-import com.jdlogic.examplemod.reference.Material;
-import com.jdlogic.examplemod.reference.Names;
 import net.minecraft.block.Block;
 import net.minecraft.init.Blocks;
+import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 
 import java.util.Set;
 
-public class ItemSapphirePickaxe extends ItemToolEM
+public class ItemPickaxeEM extends ItemToolEM
 {
     private static final Set effectiveBlocks = Sets.newHashSet(new Block[]{Blocks.activator_rail, Blocks.coal_ore, Blocks.cobblestone, Blocks.detector_rail, Blocks.diamond_block, Blocks.diamond_ore, Blocks.double_stone_slab, Blocks.golden_rail, Blocks.gold_block, Blocks.gold_ore, Blocks.ice, Blocks.iron_block, Blocks.iron_ore, Blocks.lapis_block, Blocks.lapis_ore, Blocks.lit_redstone_ore, Blocks.mossy_cobblestone, Blocks.netherrack, Blocks.packed_ice, Blocks.rail, Blocks.redstone_ore, Blocks.sandstone, Blocks.red_sandstone, Blocks.stone, Blocks.stone_slab});
 
 
-    public ItemSapphirePickaxe()
+    public ItemPickaxeEM(Item.ToolMaterial material, String unlocalizedName)
     {
-        super(2.0F, Material.Tools.SAPPHIRE, effectiveBlocks);
-        this.setCreativeTab(CreativeTabEM.EM_TAB);
-        this.isRepairable();
-        this.setUnlocalizedName(Names.Tools.SAPPHIRE_PICKAXE);
+        super(2.0F, material, effectiveBlocks);
+        this.setUnlocalizedName(unlocalizedName);
     }
 
     @Override
@@ -31,8 +26,8 @@ public class ItemSapphirePickaxe extends ItemToolEM
     }
 
     @Override
-    public float getStrVsBlock(ItemStack stack, Block Block)
+    public float getStrVsBlock(ItemStack stack, Block block)
     {
-        return Block.getMaterial() != net.minecraft.block.material.Material.iron && Block.getMaterial() != net.minecraft.block.material.Material.anvil && Block.getMaterial() != net.minecraft.block.material.Material.rock ? super.getStrVsBlock(stack, Block) : this.efficiencyOnProperMaterial;
+        return block.getMaterial() != net.minecraft.block.material.Material.iron && block.getMaterial() != net.minecraft.block.material.Material.anvil && block.getMaterial() != net.minecraft.block.material.Material.rock ? super.getStrVsBlock(stack, block) : this.efficiencyOnProperMaterial;
     }
 }

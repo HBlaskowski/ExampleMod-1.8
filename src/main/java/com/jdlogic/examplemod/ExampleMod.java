@@ -15,14 +15,12 @@ import net.minecraftforge.fml.common.registry.GameRegistry;
 @Mod(modid = Reference.MOD_ID, name = Reference.MOD_NAME, version = Reference.MOD_VERSION, guiFactory = Reference.GUI_FACTORY_CLASS)
 public class ExampleMod
 {
-    // TODO Stuff
     @Mod.Instance(Reference.MOD_ID)
     public static ExampleMod instance;
 
     @Mod.EventHandler
     public void preInit(FMLPreInitializationEvent event)
     {
-        // Passes suggestedConfigurationFile to the mod's configuration handler
         ConfigHandlerEM.init(event.getSuggestedConfigurationFile());
 
         FMLCommonHandler.instance().bus().register(new ConfigHandlerEM());
@@ -39,11 +37,9 @@ public class ExampleMod
     @Mod.EventHandler
     public void init(FMLInitializationEvent evnet)
     {
-        // Starts the registration of special block properties eg: setFireInfo
         ModBlockProperties.init();
 
-        // Registers the ModelResourceLocation of Item / itemBlock models
-        ModItemModels.init();
+        ModModels.init();
 
         ModRecipies.init();
 

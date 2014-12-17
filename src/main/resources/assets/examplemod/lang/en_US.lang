@@ -3,8 +3,38 @@ itemGroup.examplemod=Example Mod
 
 #Items
 item.examplemod:sapphire.name=Sapphire
+item.examplemod:ruby.name=Ruby
+
+#Tools
 item.examplemod:sapphire_pickaxe.name=Sapphire Pickaxe
+item.examplemod:sapphire_axe.name=Sapphire Axe
+item.examplemod:sapphire_shovel.name=Sapphire Shovel
+item.examplemod:sapphire_hoe.name=Sapphire Hoe
+
+item.examplemod:ruby_pickaxe.name=Ruby Pickaxe
+item.examplemod:ruby_axe.name=Ruby Axe
+item.examplemod:ruby_shovel.name=Ruby Shovel
+item.examplemod:ruby_hoe.name=Ruby Hoe
+
+#Armor
+item.examplemod:sapphire_helmet.name=Sapphire Helmet
+item.examplemod:sapphire_chestplate.name=Sapphire Chestplate
+item.examplemod:sapphire_leggings.name=Sapphire Leggings
+item.examplemod:sapphire_boots.name=Sapphire Hoe
+
+item.examplemod:ruby_helmet.name=Ruby Helmet
+item.examplemod:ruby_chestplate.name=Ruby Chestplate
+item.examplemod:ruby_leggings.name=Ruby Leggings
+item.examplemod:ruby_boots.name=Ruby Hoe
+
+#Weapons
+item.examplemod:sapphire_sword.name=Sapphire Sword
+item.examplemod:ruby_sword.name=Ruby Sword
+
+item.examplemod:sapphire_bow.name=Sapphire Bow
+item.examplemod:ruby_bow.name=Ruby Bow
 
 #Blocks
 tile.examplemod:charcoal_block.name=Block of Charcoal
 tile.examplemod:sapphire_ore.name=Sapphire Ore
+tile.examplemod:ruby_ore.name=Ruby Ore

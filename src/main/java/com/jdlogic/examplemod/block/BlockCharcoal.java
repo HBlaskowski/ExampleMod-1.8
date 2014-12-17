@@ -2,7 +2,6 @@ package com.jdlogic.examplemod.block;
 
 import com.jdlogic.examplemod.creativetab.CreativeTabEM;
 import com.jdlogic.examplemod.reference.Names;
-import net.minecraft.creativetab.CreativeTabs;
 
 public class BlockCharcoal extends BlockEM
 {

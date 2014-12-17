@@ -23,10 +23,9 @@ public class ConfigHandlerEM
 
     private static void loadConfiguration()
     {
-        Settings.General.enableModBlocks = configuration.getBoolean("enableModBlocks", Configuration.CATEGORY_GENERAL, true, "Set to 'true' to enable this mod's blocks.");
-        Settings.General.enableModItems = configuration.getBoolean("enableModItems", Configuration.CATEGORY_GENERAL, true, "Set to 'true' to enable this mod's items.");
-        Settings.General.enableModOreGeneration = configuration.getBoolean("enableModOreGenerator", Configuration.CATEGORY_GENERAL, true, "Set to 'true' to enable this mod's ore generator.");
-
+        Settings.General.enableModBlocks = configuration.getBoolean("Enable Mod Blocks", Configuration.CATEGORY_GENERAL, true, "Set to 'true' to enable this mod's blocks.");
+        Settings.General.enableModItems = configuration.getBoolean("Enable Mod Items", Configuration.CATEGORY_GENERAL, true, "Set to 'true' to enable this mod's items.");
+        Settings.General.enableModOreGeneration = configuration.getBoolean("Enable Ore Generator", Configuration.CATEGORY_GENERAL, true, "Set to 'true' to enable this mod's ore generator.");
         if (configuration.hasChanged())
         {
             configuration.save();

@@ -1,0 +1,5 @@
+{
+    "variants": {
+        "normal": { "model": "ExampleMod:ruby_ore" }
+    }
+}

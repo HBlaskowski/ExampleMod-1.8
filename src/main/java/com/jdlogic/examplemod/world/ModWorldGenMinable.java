@@ -43,7 +43,8 @@ public class ModWorldGenMinable implements IWorldGenerator
 
     public void generateOverworld(World world, Random random, int x, int z)
     {
-        generateOre(ModBlocks.sapphire_ore.getDefaultState(), world, random, x, z, 2, 6, 1, 0, 16);
+        generateOre(ModBlocks.sapphire_ore.getDefaultState(), world, random, x, z, 2, 6, 10, 0, 16);
+        generateOre(ModBlocks.ruby_ore.getDefaultState(), world, random, x, z, 3, 8, 16, 16, 40);
     }
 
     public void generateSky(World world, Random random, int x, int z)

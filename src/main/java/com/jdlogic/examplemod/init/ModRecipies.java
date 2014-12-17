@@ -1,12 +1,16 @@
 package com.jdlogic.examplemod.init;
 
+import com.jdlogic.examplemod.item.crafting.RecipesToolsEM;
+import com.jdlogic.examplemod.item.crafting.RecipesWeaponsEM;
+import com.jdlogic.examplemod.item.crafting.RecipiesArmorEM;
+import com.jdlogic.examplemod.reference.Reference;
 import net.minecraft.init.Items;
-import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraftforge.fml.common.registry.GameRegistry;
 import net.minecraftforge.oredict.ShapedOreRecipe;
 import net.minecraftforge.oredict.ShapelessOreRecipe;
 
+@GameRegistry.ObjectHolder(Reference.MOD_ID)
 public class ModRecipies
 {
     public static void init()
@@ -14,6 +18,8 @@ public class ModRecipies
         GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModBlocks.charcoal_block), "SSS", "SSS", "SSS", 'S', new ItemStack(Items.coal, 1, 1)));
         GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(Items.coal, 9, 1), new ItemStack(ModBlocks.charcoal_block)));
 
-        GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModItems.sapphire_pickaxe), "XXX", " # ", " # ", 'X', new ItemStack(ModItems.sapphire), '#', new ItemStack(Items.stick)));
+        (new RecipesToolsEM()).addRecipes();
+        (new RecipesWeaponsEM()).addRecipes();
+        (new RecipiesArmorEM()).addRecipes();
     }
 }

@@ -12,7 +12,7 @@ public class CreativeTabEM
         @Override
         public Item getTabIconItem()
         {
-            return Item.getItemFromBlock(ModBlocks.charcoal_block);
+            return Item.getItemFromBlock(ModBlocks.sapphire_ore);
         }
     };
 }

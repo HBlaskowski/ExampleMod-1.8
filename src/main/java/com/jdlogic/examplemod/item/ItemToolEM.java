@@ -15,7 +15,6 @@ public class ItemToolEM extends ItemTool
     {
         super(damageVsEntity, toolMaterial, blocksEffectiveAgainst);
         this.setCreativeTab(CreativeTabEM.EM_TAB);
-        this.isRepairable();
         this.maxStackSize = 1;
     }
 
@@ -35,5 +34,4 @@ public class ItemToolEM extends ItemTool
     {
         return unlocalizedName.substring(unlocalizedName.indexOf(".") + 1);
     }
-
 }

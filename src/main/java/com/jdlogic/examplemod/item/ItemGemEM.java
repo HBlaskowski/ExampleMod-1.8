@@ -1,14 +1,13 @@
 package com.jdlogic.examplemod.item;
 
 import com.jdlogic.examplemod.creativetab.CreativeTabEM;
-import com.jdlogic.examplemod.reference.Names;
 
-public class ItemSapphire extends ItemEM
+public class ItemGemEM extends ItemEM
 {
-    public ItemSapphire()
+    public ItemGemEM(String unlocalizedName)
     {
         super();
-        this.setUnlocalizedName(Names.Items.SAPPHIRE);
+        this.setUnlocalizedName(unlocalizedName);
         this.setCreativeTab(CreativeTabEM.EM_TAB);
     }
 }
