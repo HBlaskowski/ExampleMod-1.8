@@ -3,6 +3,8 @@ package com.jdlogic.examplemod.block;
 import com.jdlogic.examplemod.creativetab.CreativeTabEM;
 import com.jdlogic.examplemod.init.ModBlocks;
 import com.jdlogic.examplemod.init.ModItems;
+import com.jdlogic.examplemod.reference.Settings;
+import net.minecraft.block.Block;
 import net.minecraft.block.state.IBlockState;
 import net.minecraft.item.Item;
 import net.minecraft.util.BlockPos;
@@ -27,7 +29,22 @@ public class BlockOreEM extends BlockEM
 
     public Item getItemDropped(IBlockState state, Random rand, int fortune)
     {
-        return this == ModBlocks.sapphire_ore ? ModItems.sapphire : (this == ModBlocks.ruby_ore ? ModItems.ruby : Item.getItemFromBlock(this));
+        Item item;
+
+        if (Settings.General.enableModItems && this == ModBlocks.sapphire_ore)
+        {
+            item = ModItems.sapphire;
+        }
+        else if (Settings.General.enableModItems && this == ModBlocks.ruby_ore)
+        {
+            item = ModItems.ruby;
+        }
+        else
+        {
+            item = Item.getItemFromBlock(this);
+        }
+
+        return item;
     }
 
     public int quantityDropped(Random random)

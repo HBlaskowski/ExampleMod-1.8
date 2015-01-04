@@ -4,17 +4,18 @@ import com.jdlogic.examplemod.init.ModItems;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraftforge.fml.common.registry.GameRegistry;
+import net.minecraftforge.oredict.ShapedOreRecipe;
 
 public class RecipiesArmorEM
 {
     private String[][] recipePatterns = new String[][] {{"XXX", "X X"}, {"X X", "XXX", "XXX"}, {"XXX", "X X", "X X"}, {"X X", "X X"}};
-    private Item[][] recipeItems;
+    private Object[][] recipeItems;
 
     public RecipiesArmorEM()
     {
-        this.recipeItems = new Item[][]
+        this.recipeItems = new Object[][]
                 {
-                        {ModItems.sapphire, ModItems.ruby},
+                        {"gemSapphire", "gemRuby"},
                         {ModItems.sapphire_helmet, ModItems.ruby_helmet},
                         {ModItems.sapphire_chestplate, ModItems.ruby_chestplate},
                         {ModItems.sapphire_leggings, ModItems.ruby_leggings},
@@ -26,12 +27,12 @@ public class RecipiesArmorEM
     {
         for (int i = 0; i < this.recipeItems[0].length; ++i)
         {
-            Item item = this.recipeItems[0][i];
+            Object object = this.recipeItems[0][i];
 
             for (int j = 0; j < this.recipeItems.length - 1; ++j)
             {
-                Item item1 = this.recipeItems[j + 1][i];
-                GameRegistry.addRecipe(new ItemStack(item1), new Object[]{this.recipePatterns[j], 'X', item});
+                Item item = (Item)this.recipeItems[j + 1][i];
+                GameRegistry.addRecipe( new ShapedOreRecipe(new ItemStack(item), new Object[]{this.recipePatterns[j], 'X', object}));
             }
         }
     }

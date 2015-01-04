@@ -13,7 +13,7 @@ public class ModWorldGenerator
 
     public static void init()
     {
-        if (Settings.General.enableModOreGeneration)
+        if (Settings.General.enableModOreGeneration && Settings.General.enableModBlocks)
         {
             modWorldGenerator = new ModWorldGenMinable();
             GameRegistry.registerWorldGenerator(modWorldGenerator, 0);

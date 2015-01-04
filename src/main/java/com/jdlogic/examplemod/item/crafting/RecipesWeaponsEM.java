@@ -11,11 +11,15 @@ public class RecipesWeaponsEM
 {
     private String[][] recipePatterns = new String[][] {{"X", "X", "#"}, {" XS", "X S", " XS"}};
     private Object[][] recipeItems;
-    private static final String __OBFID = "CL_00000097";
 
     public RecipesWeaponsEM()
     {
-        this.recipeItems = new Object[][] {{ModItems.sapphire, ModItems.ruby}, {ModItems.sapphire_sword, ModItems.ruby_sword}, {ModItems.sapphire_bow, ModItems.ruby_bow}};
+        this.recipeItems = new Object[][]
+                {
+                        {"gemSapphire", "gemRuby"},
+                        {ModItems.sapphire_sword, ModItems.ruby_sword},
+                        {ModItems.sapphire_bow, ModItems.ruby_bow}
+                };
     }
 
     public void addRecipes()

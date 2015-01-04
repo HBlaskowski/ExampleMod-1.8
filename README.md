@@ -3,7 +3,7 @@ ExampleMod-1.8
 
 Example of a simple Minecraft Forge mod for MC 1.8
 
-Forge Version 1.8-11.14.0.1269
+Forge Version 1.8-11.14.0.1281
 
 Feel free to request new features that you would like to see.
 

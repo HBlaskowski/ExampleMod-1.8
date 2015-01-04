@@ -38,3 +38,42 @@ item.examplemod:ruby_bow.name=Ruby Bow
 tile.examplemod:charcoal_block.name=Block of Charcoal
 tile.examplemod:sapphire_ore.name=Sapphire Ore
 tile.examplemod:ruby_ore.name=Ruby Ore
+
+#ConfigGui Categories
+examplemod.configgui.EMConfigTitle= Example Mod Settings
+examplemod.configgui.ctgy.EMGeneralConfig= General Settings
+examplemod.configgui.ctgy.EMOreConfig= Ore Generation Settings
+
+examplemod.configgui.ctgy.EMSapphireConfig= Sapphire Ore Generation
+examplemod.configgui.ctgy.EMSapphireOverworldConfig= Overworld Sapphire Ore
+examplemod.configgui.ctgy.EMSapphireNetherConfig= Nether Sapphire Ore
+examplemod.configgui.ctgy.EMSapphireEndConfig= End Sapphire Ore
+
+examplemod.configgui.ctgy.EMRubyConfig= Ruby Ore Generation
+examplemod.configgui.ctgy.EMRubyOverworldConfig= Overworld Ruby Ore
+examplemod.configgui.ctgy.EMRubyNetherConfig= Nether Ruby Ore
+examplemod.configgui.ctgy.EMRubyEndConfig= End Ruby Ore
+
+#ConfigGui Category Tooltips
+examplemod.configgui.ctgy.EMGeneralConfig.tooltip= Contains the general settings for this mod.
+examplemod.configgui.ctgy.EMOreConfig.tooltip= Contains settings for ore generation.
+
+examplemod.configgui.ctgy.EMSapphireConfig.tooltip= Contains ore generation settings for sapphire ore.
+examplemod.configgui.ctgy.EMSapphireOverworldConfig.tooltip= Contains settings for overworld sapphire ore generation.
+examplemod.configgui.ctgy.EMSapphireNetherConfig.tooltip= Contains settings for nether sapphire ore generation.
+examplemod.configgui.ctgy.EMSapphireEndConfig.tooltip= Contains settings for end sapphire ore generation.
+
+examplemod.configgui.ctgy.EMRubyConfig.tooltip= Contains ore generation settings for ruby ore.
+examplemod.configgui.ctgy.EMRubyOverworldConfig.tooltip= Contains settings for overworld ruby ore generation.
+examplemod.configgui.ctgy.EMRubyNetherConfig.tooltip= Contains settings for nether ruby ore generation.
+examplemod.configgui.ctgy.EMRubyEndConfig.tooltip= Contains settings for end ruby ore generation.
+
+#ConfigGui
+examplemod.configgui.enableModBlocks= Enable Blocks
+examplemod.configgui.enableModItems= Enable Items
+examplemod.configgui.enableOreGenerator= Enable Ore Generation
+
+examplemod.configgui.maxVeinSize= Max Vein Size
+examplemod.configgui.veinPerChunk= Veins Per Chunk
+examplemod.configgui.minY= Minimum Y Level
+examplemod.configgui.maxY= Maximum Y Level

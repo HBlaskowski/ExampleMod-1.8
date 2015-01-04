@@ -15,7 +15,7 @@ public class RecipesToolsEM
     {
         this.recipeItems = new Object[][]
                 {
-                        {ModItems.sapphire, ModItems.ruby},
+                        {"gemSapphire", "gemRuby"},
                         {ModItems.sapphire_pickaxe, ModItems.ruby_pickaxe},
                         {ModItems.sapphire_shovel, ModItems.ruby_shovel},
                         {ModItems.sapphire_axe,ModItems.ruby_axe},

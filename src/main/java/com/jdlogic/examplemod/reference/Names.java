@@ -7,7 +7,12 @@ public final class Names
         public static final String CHARCOAL = "charcoal_block";
 
         public static final String SAPPHIRE_ORE = "sapphire_ore";
+        public static final String NETHER_SAPPHIRE_ORE = "nether_sapphire_ore";
+        public static final String END_SAPPHIRE_ORE = "end_sapphire_ore";
+
         public static final String RUBY_ORE = "ruby_ore";
+        public static final String NETHER_RUBY_ORE = "nether_ruby_ore";
+        public static final String END_RUBY_ORE = "end_ruby_ore";
     }
 
     public static final class Items

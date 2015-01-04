@@ -41,6 +41,8 @@ public class ExampleMod
 
         ModModels.init();
 
+        ModOreDictionary.init();
+
         ModRecipies.init();
 
         GameRegistry.registerFuelHandler(new FuelHandlerEM());
